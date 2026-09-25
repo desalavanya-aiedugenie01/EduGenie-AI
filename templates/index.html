@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - AI Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🎓 EduGenie</h1>
+            <p>Google Gemini Powered Learning Assistant</p>
+        </header>
+
+        <main>
+
+            <section class="card">
+                <h2>Ask a Question</h2>
+
+                <textarea
+                    id="question"
+                    placeholder="Type your question here..."
+                ></textarea>
+
+                <button onclick="askQuestion()">
+                    Ask Question
+                </button>
+
+                <div id="questionResult" class="result"></div>
+            </section>
+
+
+            <section class="card">
+                <h2>Explain a Concept</h2>
+
+                <input
+                    type="text"
+                    id="concept"
+                    placeholder="Enter a concept..."
+                >
+
+                <button onclick="explainConcept()">
+                    Explain
+                </button>
+
+                <div id="explanationResult" class="result"></div>
+            </section>
+
+
+            <section class="card">
+                <h2>Generate Quiz</h2>
+
+                <input
+                    type="text"
+                    id="quizTopic"
+                    placeholder="Enter quiz topic..."
+                >
+
+                <button onclick="generateQuiz()">
+                    Generate Quiz
+                </button>
+
+                <div id="quizResult" class="result"></div>
+            </section>
+
+
+            <section class="card">
+                <h2>Summarize Text</h2>
+
+                <textarea
+                    id="summaryText"
+                    placeholder="Paste text to summarize..."
+                ></textarea>
+
+                <button onclick="summarizeText()">
+                    Summarize
+                </button>
+
+                <div id="summaryResult" class="result"></div>
+            </section>
+
+
+            <section class="card">
+                <h2>Learning Path</h2>
+
+                <input
+                    type="text"
+                    id="learningTopic"
+                    placeholder="Enter a topic..."
+                >
+
+                <button onclick="getLearningPath()">
+                    Create Learning Path
+                </button>
+
+                <div id="learningResult" class="result"></div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="/static/css/js/app.js"></script>
+
+</body>
+</html>
